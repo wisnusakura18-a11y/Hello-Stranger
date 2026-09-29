@@ -1,0 +1,26 @@
+HELLO, STRANGER - UI BUILD
+
+Flow:
+Main Menu -> PLAY -> Character Setup -> START -> Game placeholder
+Main Menu -> SETTINGS -> Back
+Main Menu -> CREDITS -> Back
+
+Character Setup:
+- Name input uses Godot LineEdit, so the player can type directly.
+- Girl/Boy buttons update the preview on the right.
+- Character preview has a gold StyleBoxFlat border matching the UI accent.
+- START requires a non-empty name, then saves name/gender through GameState.
+
+Team map handoff:
+- Future map should go under res://scenes/maps/
+- Map assets should go under res://assets/maps/
+- Replace the placeholder world inside Game without touching Main Menu, Character Setup, Settings, or Credits.
+
+Settings:
+- Audio/display/accessibility controls are UI-ready.
+- Fullscreen toggle is functional.
+- Brightness overlay responds to the slider.
+- Audio application can be wired to buses when music/SFX are added.
+
+Godot:
+- Built for Godot 4.x / 1280x720 / GL Compatibility.

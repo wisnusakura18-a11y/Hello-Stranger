@@ -1,0 +1,8 @@
+HELLO, STRANGER - V14 UI TUNING
+
+- Player/NPC sprites tuned to medium exhibition size.
+- Character names centered directly above heads and more readable.
+- Camera tightened to 10.0 for closer gameplay POV.
+- HUD containers compacted while font sizes were increased.
+- Dialog panel/portrait enlarged for readable exhibition viewing.
+- Warm brown/gold/cream visual direction preserved.

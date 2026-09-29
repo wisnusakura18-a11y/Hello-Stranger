@@ -1,0 +1,19 @@
+HELLO, STRANGER - TEAM HANDOFF
+
+IMPORTANT
+- Use the same Godot version as the project.
+- Keep game viewport at 1280x720.
+- Do not modify Project Settings casually.
+
+MAP INTEGRATION
+- Put map scenes in: res://scenes/maps/
+- Put map textures/assets in: res://assets/maps/
+- Recommended map scene root: Node2D.
+- Keep map scenes self-contained and bring all dependent textures/resources with them.
+
+CORE FLOW
+Main Menu -> Game.tscn -> World/Map
+The current Game.tscn is intentionally a safe placeholder. Replace the placeholder map node when the team map is ready.
+
+ART DIRECTION
+Warm Indonesian school setting, golden-hour lighting, pixel-art look, nostalgic mystery atmosphere.

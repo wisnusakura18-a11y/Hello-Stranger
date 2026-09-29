@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6gf167mleohq"]
+
+[ext_resource type="Script" path="res://scripts/player/Player.gd" id="1_player"]
+
+[sub_resource type="CapsuleShape2D" id="Capsule_player"]
+radius = 7.0
+height = 18.0
+
+[node name="Player" type="CharacterBody2D"]
+y_sort_enabled = true
+script = ExtResource("1_player")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 10)
+shape = SubResource("Capsule_player")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -10)
+zoom = Vector2(10, 10)
+position_smoothing_enabled = true
+position_smoothing_speed = 9.0

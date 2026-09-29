@@ -1,0 +1,27 @@
+HELLO, STRANGER - EXHIBITION FINAL V12
+
+Visual/gameplay polish based on the latest gameplay screenshots.
+
+Changes:
+- Slower natural player movement speed (28 px/s) with a calmer walk cycle.
+- Player and NPC sprite scales tightened to similar on-screen proportions.
+- Character name labels are top-level world labels and follow the character head every frame, centered directly above the head.
+- NPC floating role/name clutter reduced; no floating E/F badge on characters.
+- Quest item prompt badge is disabled so there is no duplicate oversized F/E prompt.
+- NPC spawn zones use floor-oriented candidate points, randomized per day with spacing among NPCs.
+- Camera slightly balanced at 8.75 zoom while keeping a tight gameplay POV.
+- HUD is compact, warmer, more opaque, and uses stronger outline/shadow for readability.
+- Bottom HUD containers are narrower with larger, clearer text.
+- Dialogue panel is narrower and slightly taller, with larger readable text and a larger full-frame portrait that follows MC gender.
+- Dialog portrait keeps the full character frame visible instead of cropping into the face.
+- Item/quest guidance remains F = take/place, G = submit, E = talk.
+- Existing quest, save/load, LAN leaderboard and 7-day progression systems remain intact.
+
+Validation performed in this environment:
+- Existing project static validator: PASS
+- No mixed tab/space indentation introduced by V12 changes.
+- No missing res:// paths found by the existing validator.
+- Source archive integrity checked after packaging.
+
+Runtime note:
+- A Godot 4.7.1 executable was not available in the sandbox, so this build was not F6/F5 runtime-tested here.

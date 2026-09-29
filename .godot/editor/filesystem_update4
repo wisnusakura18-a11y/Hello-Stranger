@@ -1,0 +1,10 @@
+res://scenes/main/MainMenu.tscn
+res://scenes/main/MainMenu.gd
+res://scenes/game/Game.gd
+res://scripts/player/Player.gd
+res://script/world.gd
+res://scenes/World.tscn
+res://scenes/game/Game.tscn
+res://scenes/player.tscn
+res://scenes/class_room2.tscn
+res://scenes/canteen_room.tscn

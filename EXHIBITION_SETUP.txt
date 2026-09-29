@@ -1,0 +1,22 @@
+HELLO, STRANGER — 3 KOMPUTER PAMERAN
+
+PC C = HOST LEADERBOARD + SAVE SERVER
+1. Copy this project to PC C.
+2. Jalankan exhibition_server/start_server.bat.
+3. Cari IPv4 PC C dengan `ipconfig`, misalnya 192.168.1.20.
+4. Biarkan server tetap terbuka.
+5. Firewall Windows harus mengizinkan Python di jaringan Private.
+
+PC A + PC B = PLAYER
+1. Buka game.
+2. Settings -> LAN SERVER.
+3. Isi `http://IP-PC-C:8765`.
+4. SAVE SETTINGS.
+5. Main normal. F5 otomatis menyimpan lokal + LAN.
+
+LEADERBOARD
+PC C bisa menjalankan game juga dan membuka Leaderboard. Data akan refresh otomatis tiap 2 detik.
+PC A/B tidak perlu mengirim screenshot atau file manual. Save/progress username dikirim ke server.
+
+LOAD GAME
+Pilih LOAD GAME di menu, masukkan username yang sama. Game mengambil save server dulu, lalu local fallback kalau server sedang offline.

@@ -1,0 +1,10 @@
+Hello, Stranger - V15 UI/Character Rework
+
+- Player/NPC sprite scale raised to medium.
+- World-space nameplates use compact fixed scale and sit centered directly above heads.
+- Camera increased to 10.75x for tighter POV.
+- Top HUD is larger and compact; bottom HUD uses readable medium typography without long stretched cards.
+- Dialogue modal is lifted above the bottom HUD and uses larger 22/24px typography with larger portrait area.
+- Removed unused label width locals that could trigger warning-as-error.
+- Removed duplicate music slider signal hookup.
+- Quest item labels slightly larger and closer to items.

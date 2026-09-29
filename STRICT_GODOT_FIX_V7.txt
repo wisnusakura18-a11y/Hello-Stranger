@@ -1,0 +1,14 @@
+HELLO, STRANGER - FINAL ERROR FIX V7
+
+Fixed:
+1. CharacterSetup.gd mixed indentation at _on_girl_pressed / _on_boy_pressed and normalized leading indentation.
+2. Game.gd transition_label construction no longer calls _label() with CanvasLayer. Label is now constructed directly and added to hud_layer.
+
+Static validation:
+- Project validator: PASS
+- Mixed indentation scan: PASS (no mixed tab/space files)
+- CanvasLayer passed to _label scan: PASS
+- Anonymous lambda scan: PASS
+- Python server compile/test: PASS (where applicable)
+
+Open project.godot from this folder in Godot.

@@ -1,0 +1,12 @@
+HELLO, STRANGER - STRICT GODOT FIX
+
+This build specifically fixes the Game.gd parser/warning issues seen in Godot:
+- Variant type inference in Game.gd locals
+- q quiz variable explicit Array typing
+- integer-division warnings in quiz/order button layout
+- unused npc_id / failed_id locals
+
+IMPORTANT:
+Open THIS project folder in a fresh Godot window, not the older project/cache.
+Project file: project.godot
+Main scene: scenes/main/MainMenu.tscn

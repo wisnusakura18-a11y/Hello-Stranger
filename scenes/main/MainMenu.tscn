@@ -1,0 +1,139 @@
+[gd_scene load_steps=9 format=3 uid="uid://23u8datu11fs"]
+
+[ext_resource type="Script" path="res://scenes/main/MainMenu.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://2ccokdpaema2" path="res://assets/backgrounds/main_menu_bg.png" id="2_bg"]
+[ext_resource type="Texture2D" uid="uid://dlaujgr2ire7f" path="res://assets/ui/menu/play.png" id="3_play"]
+[ext_resource type="Texture2D" uid="uid://wo0cijo6rb8g" path="res://assets/ui/menu/load_game.png" id="4_load"]
+[ext_resource type="Texture2D" uid="uid://cto3r72xyrov5" path="res://assets/ui/menu/leaderboard.png" id="5_leader"]
+[ext_resource type="Texture2D" uid="uid://bqs7r4pfkdb6k" path="res://assets/ui/menu/settings.png" id="6_settings"]
+[ext_resource type="Texture2D" uid="uid://dfos3comvi3ld" path="res://assets/ui/menu/credits.png" id="7_credits"]
+[ext_resource type="Texture2D" uid="uid://bw80ugjleh2w6" path="res://assets/ui/menu/exit.png" id="8_exit"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="SoftOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.02, 0.012, 0.01, 0.08)
+
+[node name="MenuRoot" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="PlayButton" type="TextureButton" parent="MenuRoot"]
+layout_mode = 0
+offset_left = 1010.0
+offset_top = 272.0
+offset_right = 1080.99
+offset_bottom = 310.0
+pivot_offset = Vector2(0, 19)
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("3_play")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="LoadButton" type="TextureButton" parent="MenuRoot"]
+layout_mode = 0
+offset_left = 1010.0
+offset_top = 326.0
+offset_right = 1160.15
+offset_bottom = 364.0
+pivot_offset = Vector2(0, 19)
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("4_load")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="LeaderboardButton" type="TextureButton" parent="MenuRoot"]
+layout_mode = 0
+offset_left = 1010.0
+offset_top = 380.0
+offset_right = 1200.93
+offset_bottom = 418.0
+pivot_offset = Vector2(0, 19)
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("5_leader")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="SettingsButton" type="TextureButton" parent="MenuRoot"]
+layout_mode = 0
+offset_left = 1010.0
+offset_top = 434.0
+offset_right = 1124.01
+offset_bottom = 472.0
+pivot_offset = Vector2(0, 19)
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("6_settings")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="CreditsButton" type="TextureButton" parent="MenuRoot"]
+layout_mode = 0
+offset_left = 1010.0
+offset_top = 488.0
+offset_right = 1118.52
+offset_bottom = 526.0
+pivot_offset = Vector2(0, 19)
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("7_credits")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ExitButton" type="TextureButton" parent="MenuRoot"]
+layout_mode = 0
+offset_left = 1010.0
+offset_top = 542.0
+offset_right = 1075.7
+offset_bottom = 580.0
+pivot_offset = Vector2(0, 19)
+focus_mode = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("8_exit")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="PlayArrow" type="Polygon2D" parent="MenuRoot"]
+color = Color(1, 0.96, 0.82, 0.96)
+polygon = PackedVector2Array(0, 0, 14, 8, 0, 16)
+
+[connection signal="pressed" from="MenuRoot/PlayButton" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MenuRoot/LoadButton" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="MenuRoot/LeaderboardButton" to="." method="_on_leaderboard_pressed"]
+[connection signal="pressed" from="MenuRoot/SettingsButton" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="MenuRoot/CreditsButton" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="MenuRoot/ExitButton" to="." method="_on_exit_pressed"]

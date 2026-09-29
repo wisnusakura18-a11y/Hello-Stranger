@@ -1,0 +1,18 @@
+HELLO, STRANGER - FINAL REWORK CHECKS
+
+Static validation performed:
+- No ':=' inferred-declaration syntax remains in project GDScript files.
+- Critical script brace / bracket / parenthesis balance: OK.
+- All quoted res:// file references checked: 0 missing.
+- Main scene points to res://scenes/main/MainMenu.tscn.
+- Game flow scripts present: GameState, Player, NPC, QuestMarker, Game, Leaderboard.
+- Player/NPC sprite scale reduced and camera zoom tightened.
+- E / Enter / Space interaction path is event-based in Game.gd.
+- Quest timer is 90 seconds and scoring uses the supplied quest specification.
+- Game over, retry, save/load, leaderboard, and epilogue paths are present.
+- Pa Adrian is placed in the classroom in the latest build request.
+- Mika is placed in the field; Sora in the library; Bu Veyra and Orin in class; Bu Imas and Eira in the canteen.
+- Physical quest markers are drawn in-engine, including yellow sparkle visuals and item-specific icons.
+
+Runtime note:
+The sandbox used to prepare this archive does not have a Godot executable, so a real F6/F5 runtime playtest could not be performed here. The archive is therefore statically validated rather than falsely labeled as runtime-tested.

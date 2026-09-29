@@ -1,0 +1,10 @@
+Hello, Stranger • v8 rework notes
+
+Warm palette: brown / golden / cream. No blue UI.
+In-game HUD is compact and lightly translucent. Character labels are tiny and text-only.
+Camera zoom is tighter (7.0) and player/NPC sprites are modestly larger.
+Interior TileMap physics are disabled by script so exhibition rooms/corridors are reachable; outer boundary remains.
+NPCs stay in their assigned zones and are randomized among fixed spots each day.
+Load Game shows searchable player cards and leaderboard remains multi-player LAN aware.
+Pause menu offers Save, Settings, How to Play, Save & Exit.
+Settings: Master/Music/SFX, Fullscreen, Guide Arrow, Auto Save, LAN Server.

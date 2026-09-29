@@ -1,0 +1,14 @@
+BEFORE EXHIBITION
+
+[ ] PC C run exhibition_server/start_server.bat
+[ ] PC C allow Python through Windows Private Firewall
+[ ] note PC C IPv4
+[ ] PC A set LAN SERVER URL
+[ ] PC B set LAN SERVER URL
+[ ] start game on A/B
+[ ] enter unique usernames
+[ ] finish at least one quest on A
+[ ] finish at least one quest on B
+[ ] verify A/B scores appear on C leaderboard
+[ ] verify progress reload with username
+[ ] keep leaderboard screen visible on PC C

@@ -1,0 +1,14 @@
+HELLO, STRANGER - Main Menu asset notes
+
+The supplied transparent PNG menu labels are used as TextureButton assets.
+All six menu items are normalized to the same visible height (38 px), using
+Leaderboard as the optical size reference while preserving each label's
+natural aspect ratio.
+
+Hover behavior:
+- Arrow indicator follows the hovered button immediately.
+- The hovered label gently pops out to 106% scale.
+- On exit it returns smoothly to 100%.
+- The arrow does not jump back to Play during cursor movement.
+
+Main menu target viewport: 1280 x 720.
