@@ -1,5 +1,32 @@
 extends Node2D
 
+const DOORS: Dictionary = {
+	"classroom_transition_point": {
+		"scene": "res://class_room1.tscn",
+		"spawn": "DariLorong",
+	},
+	"canteen_transition_point": {
+		"scene": "res://canteen_room.tscn",
+		"spawn": "DariLorong",
+	},
+		"classroom2_transition_point": {
+		"scene": "res://class_room2.tscn",
+		"spawn": "DariLorong",
+	},
+		"classroom3_transition_point": {
+		"scene": "res://class_room3.tscn",
+		"spawn": "DariLorong",
+	},
+		"classroom4_transition_point": {
+		"scene": "res://class_room4.tscn",
+		"spawn": "DariLorong",
+	},
+		"classroom5_transition_point": {
+		"scene": "res://class_room5.tscn",
+		"spawn": "DariLorong",
+	},
+}
+
 func _ready() -> void:
 	var tile_map: TileMap = get_node_or_null("TileMap") as TileMap
 	if tile_map != null and tile_map.tile_set != null:
